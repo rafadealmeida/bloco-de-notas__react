@@ -1,14 +1,11 @@
-import {ListaDeNotas} from "./componente/Lista de Notas"
+import {ListaDeNotas} from "./componente/ListaDeNotas"
+import FormularioCadastro from "./componente/FormularioCadastro";
 
 function App() {
   return (
   
     <section>
-      <form>
-        <input type="text" placeholder="Título" />
-        <textarea placeholder="Escreva sua nota ..."></textarea>
-        <button>Cria sua Nota</button>
-      </form>
+     <FormularioCadastro/>
       <ListaDeNotas/>
     </section>
   );
