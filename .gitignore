@@ -1,0 +1,12 @@
+
+ceep/node_modules/.bin/semver.cmd
+ceep/node_modules/.bin/acorn
+*.cmd
+ceep/node_modules/.bin/detect.ps1
+*.ps1
+ceep/node_modules/.bin/ansi-html
+
+ceep/node_modules
+ceep/public/logo192.png
+ceep/public/favicon.ico
+ceep/public/logo512.png
