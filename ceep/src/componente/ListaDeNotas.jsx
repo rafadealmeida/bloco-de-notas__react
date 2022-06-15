@@ -4,15 +4,15 @@ export class ListaDeNotas extends React.Component {
     render() {
         return (
             <ul>
-                <li>
-                    <CardNota />
-                </li>
-                <li>
-                    <CardNota />
-                </li>
-                <li>
-                    <CardNota />
-                </li>
+                {Array.of("Trabalho", "Trabalho", "Estudo").map(categoria => {
+                    return (
+                        <li>
+                            <span>{categoria}</span>
+                            <CardNota />
+                        </li>
+                    )
+                })
+                }
             </ul>
         )
     }
