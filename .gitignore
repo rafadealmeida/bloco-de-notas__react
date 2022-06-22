@@ -10,3 +10,5 @@ ceep/node_modules
 ceep/public/logo192.png
 ceep/public/favicon.ico
 ceep/public/logo512.png
+node_modules/.bin/loose-envify
+node_modules
