@@ -9,6 +9,7 @@ class ListaDeNotas extends Component {
           return (
             <li className="lista-notas_item" key={index}>
               <CardNota 
+              indice={index}
               deletarNota={this.props.deletarNota}
               titulo = {nota.titulo}
               texto = {nota.texto}/>
