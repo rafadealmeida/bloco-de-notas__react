@@ -17,3 +17,7 @@
     color: #fff;
     padding: 0 .5rem;
 }
+
+.lista__categoria--input{
+    padding: 0
+}
