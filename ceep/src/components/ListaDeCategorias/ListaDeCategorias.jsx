@@ -13,7 +13,7 @@ class ListaDeCategorias extends Component {
     return (
       <section  className="lista__sessao">
         <ul className="lista__categorias">
-          {this.props.categoria.map((categoria,index) =>{
+          {this.props.categorias.categorias.map((categoria,index) =>{
             return <li key={index} className="lista__itens">{categoria}</li>
 
           })}
