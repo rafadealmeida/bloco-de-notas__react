@@ -7,6 +7,9 @@ export default class ArrayDeNotas{
         const novaNota = new Nota(titulo, texto, categoria);
         this.notas.push(novaNota);
     }
+    apagarNota(indice){
+        this.notas.splice(indice, 1);
+    }
 }
 
 
