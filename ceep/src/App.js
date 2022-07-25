@@ -9,26 +9,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      notas: [],
-      categorias:[]
+      // notas: [],
+      // categorias:[]
     };
   }
 
-  criarNota(titulo, texto, categoria) {
-    const novaNota = { titulo, texto, categoria };
-    const novoArrayNotas = [...this.state.notas, novaNota];
-    const novoEstado = {
-      notas: novoArrayNotas,
-    };
+  // criarNota(titulo, texto, categoria) {
+  //   const novaNota = { titulo, texto, categoria };
+  //   const novoArrayNotas = [...this.state.notas, novaNota];
+  //   const novoEstado = {
+  //     notas: novoArrayNotas,
+  //   };
 
-    this.setState(novoEstado);
-  }
+  //   this.setState(novoEstado);
+  // }
 
-  adicionarCategoria(nomeCategoria) {
-    const novoArrayCategorias = [...this.state.categorias, nomeCategoria];
-    const novoEstado = {...this.state, categorias:novoArrayCategorias};
-    this.setState(novoEstado)
-  }
+  // adicionarCategoria(nomeCategoria) {
+  //   const novoArrayCategorias = [...this.state.categorias, nomeCategoria];
+  //   const novoEstado = {...this.state, categorias:novoArrayCategorias};
+  //   this.setState(novoEstado)
+  // }
 
   deletarNota(index) {
     let arrayNotas = this.state.notas;
