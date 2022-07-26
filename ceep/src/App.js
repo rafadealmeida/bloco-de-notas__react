@@ -7,7 +7,7 @@ import "./assets/index.css";
 import Categorias from "./dados/Categorias";
 import ArrayDeNotas from "./dados/Notas";
 
-class App extends Component {
+class App extends Component { 
   constructor() {
     super();
     this.categorias = new Categorias ();
@@ -18,8 +18,8 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro 
-        categorias = {this.categorias.categorias}
-        criarNota={this.notas.criarNota} />
+        categorias = {this.categorias}
+        criarNota={this.notas.adicionarNotas.bind(this.notas)} />
 
         <main className="conteudo-principal">
           <ListaDeCategorias 
@@ -27,7 +27,7 @@ class App extends Component {
           categorias={this.categorias} />
           <ListaDeNotas
             deletarNota={this.notas.apagarNota.bind(this.notas)}
-            notas={this.notas.notas}
+            notas={this.notas}
           />
         </main>
       </section>
