@@ -13,13 +13,14 @@ class ListaDeCategorias extends Component {
   }
 
   _novasCategorias(categorias) {
-    this.setState = {...this.state, categorias}
+    this.setState({...this.state, categorias})
   }
 
   _handleInputCategorias(e){
     if(e.key == "Enter"){
       let valorCategoria = e.target.value;
       this.props.adicionarCategoria(valorCategoria);
+      
     };
   }
   
@@ -27,7 +28,7 @@ class ListaDeCategorias extends Component {
     return (
       <section  className="lista__sessao">
         <ul className="lista__categorias">
-          {this.props.categorias.categorias.map((categoria,index) =>{
+          {this.state.categorias.map((categoria,index) =>{
             return <li key={index} className="lista__itens">{categoria}</li>
 
           })}
