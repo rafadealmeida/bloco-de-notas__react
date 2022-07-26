@@ -7,9 +7,11 @@ export default class ArrayDeNotas{
     adicionarNotas(titulo, texto, categoria){
         const novaNota = new Nota(titulo, texto, categoria);
         this.notas.push(novaNota);
+        this.notificar()
     }
     apagarNota(indice){
         this.notas.splice(indice, 1);
+        this.notificar()
     }
 
     inscrever(func){
